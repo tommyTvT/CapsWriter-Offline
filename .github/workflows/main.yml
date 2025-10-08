@@ -18,6 +18,7 @@ jobs:
         with:
           requirements: 'requirements-server.txt'
           python_ver: '3.12'
+          python_arch: 'arm64'
           spec: 'start_server.py'
           upload_exe_with_name: 'workflows-arm64'
           options: --name "workflows-arm64"
