@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   pyinstaller-build:
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, arm64]
     steps:
       - name: Create Executable
         uses: sayyid5416/pyinstaller@v1
@@ -19,5 +19,5 @@ jobs:
           requirements: 'requirements-server.txt'
           python_ver: '3.12'
           spec: 'start_server.py'
-          upload_exe_with_name: 'workflows'
-          options: --onefile, --name "workflows", --windowed, 
+          upload_exe_with_name: 'workflows-arm64'
+          options: --onefile, --name "workflows-arm64", --windowed, 
