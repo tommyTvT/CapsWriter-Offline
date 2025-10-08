@@ -20,4 +20,4 @@ jobs:
           python_ver: '3.12'
           spec: 'start_server.py'
           upload_exe_with_name: 'workflows-arm64'
-          options: --onefile, --name "workflows-arm64", --windowed, 
+          options: --name "workflows-arm64", 
